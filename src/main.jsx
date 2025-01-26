@@ -5,9 +5,10 @@ import Login from "./auth/Login";
 import Register from "./auth/register";
 import "./index.css";
 import Main from "./layout/sidebar/Main";
+import Chats from "./pages/chats/Chats";
 import Error from "./pages/error/error";
-import Home from "./pages/home/Home";
-import Message from "./pages/message/Message";
+import Profile from "./pages/profile/Profile";
+import Settings from "./pages/settings/Settings";
 import AuthProvider from "./provider/AuthProvider";
 
 createRoot(document.getElementById("root")).render(
@@ -16,8 +17,10 @@ createRoot(document.getElementById("root")).render(
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Main />}>
-            <Route index element={<Home />} />
-            <Route path="/messages" element={<Message />} />
+            <Route index element={<Chats />} />
+            <Route path="/profile" element={<Profile />} />
+
+            <Route path="/settings" element={<Settings />} />
             <Route path="/log-in" element={<Login />} />
             <Route path="/register" element={<Register />} />
             <Route path="*" element={<Error />} />

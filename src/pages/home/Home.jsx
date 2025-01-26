@@ -6,7 +6,7 @@ const Home = () => {
   useEffect(() => {
     setTitle("Home");
   }, [setTitle]);
-  return <div></div>;
+  return <div>fsd</div>;
 };
 
 export default Home;

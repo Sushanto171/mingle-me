@@ -6,7 +6,7 @@ export const AuthContext = createContext();
 const AuthProvider = ({ children }) => {
   const [title, setTitle] = useState("Home");
   useEffect(() => {
-    document.title = title;
+    document.title = `${title} | MingleME`;
   }, [title]);
   const authValue = {
     title,

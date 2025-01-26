@@ -6,7 +6,7 @@ const Message = () => {
   useEffect(() => {
     setTitle("Messages");
   }, [setTitle]);
-  return <div>this is conversation page</div>;
+  return <div>Get started</div>;
 };
 
 export default Message;
