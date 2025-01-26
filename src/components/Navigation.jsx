@@ -6,9 +6,9 @@ import logo from "../../public/logo.png";
 
 const Navigation = () => {
   return (
-    <div className="w-8 bg-[#1A120B] h-full flex justify-between items-center py-2 rounded-lg col-span-3 rounded-r-none flex-col">
-      <ul className="space-y-3 text-sm">
-        <li className="hover:text-[#9A8C98] transition-all duration-200 px-1">
+    <div className="w-10 bg-[#1A120B] h-full flex justify-between items-center py-2 rounded-lg col-span-3 rounded-r flex-col">
+      <ul className="space-y-3 text-sm mt-8 sm:mt-0">
+        <li className="hover:text-[#9A8C98] transition-all duration-200 px-2">
           <img className="w-5 h-5 " src={logo} />
         </li>
         <li className="hover:text-[#9A8C98] transition-all duration-200">
@@ -17,7 +17,7 @@ const Navigation = () => {
             className={({ isActive }) =>
               `${
                 isActive ? "border-[#E5E5CB]" : "border-transparent"
-              } tooltip  tooltip-right border-r-2 px-1`
+              } tooltip  tooltip-right border-r-2 px-2`
             }
             data-tip="Profile"
           >
@@ -30,7 +30,7 @@ const Navigation = () => {
             className={({ isActive }) =>
               `flex items-center justify-center ${
                 isActive ? "border-[#E5E5CB]" : "border-transparent"
-              } tooltip tooltip-right border-r-2 px-1`
+              } tooltip tooltip-right border-r-2 px-2`
             }
             data-tip="Chats"
           >
@@ -44,7 +44,7 @@ const Navigation = () => {
             className={({ isActive }) =>
               `${
                 isActive ? "border-[#E5E5CB]" : "border-transparent"
-              } tooltip  tooltip-right border-r-2 px-1`
+              } tooltip  tooltip-right border-r-2 px-2 z-20`
             }
             data-tip="Settings"
           >
